@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: poppins,sans-serif;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-top: 70px;
+    font-size: 30px;
+    color: grey;
+    padding-left: 0px;
+}
+.link{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: grey;
+    transition: color 1.5s;
+    padding-left: 145px;
+}
+.link a{
+    text-decoration: line-through;
+    text-decoration: none;
+    color: grey;
+}
+.link a:hover{
+    color: rgb(178, 176, 176);
+}
+.button{
+    position: relative;
+    /* top: 25%; */
+    left: 35%; 
+    margin-top: 10px;
+}
+.add_todo{
+    height: 50px;
+    width: 125px;
+    color: white;
+    background-color: rgb(3, 3, 78);
+    border: none;
+    border-radius: .25rem;
+    padding: 5px;
+    cursor: pointer;
+}
+.add_todo:hover{
+    transition: background-color 2.5s;
+    background-color: rgb(104, 159, 193);
+}
+.container{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.todo_class{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 5px;
+}
+.storage{
+    background-color: lightgray;
+    max-height: 30px;
+    width: 290px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    border: none;
+    border-radius: 2.5px;
+    outline: none;
+    resize: none;
+}
+.fa-check{
+    background-color: whitesmoke;
+    color: green;
+    border: none;
+    border-radius: 12px;
+    padding: 1px;
+    width: 18px;
+    height: 18px;
+    transition: background-color,color  1.5s;
+}
+.fa-check:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+.tick{
+    background: transparent;
+    border: none;
+}
+.fa-rotate{
+    background-color: whitesmoke;
+    color: black;
+    padding: 1px;
+    width: 18px;
+    height: 20px;
+    border: none;
+    border-radius: 12px;
+    transition: background-color,color  1.5s;
+}
+.fa-rotate:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.reset{
+    background: transparent;
+    border: none;
+}
+.fa-trash{
+    background-color: whitesmoke;
+    color: red;
+    padding: 1px;
+    width: 18px;
+    height: 20px;
+    border: none;
+    border-radius: 12px;
+    transition: background-color,color  1.5s;
+}
+.fa-trash:hover{
+    background-color: rgb(181, 177, 177);
+    color: rgb(171, 4, 4);
+}
+.delete{
+    background: transparent;
+    border: none;
+}
+/* responsive css */
+@media(max-width:768px)
+{
+    .button{
+        position: relative;
+        right: 35%;
+        margin: 25px;
+    }
+}
+@media(maxwidth:991px){
+    .button{
+        position: relative;
+        right: 40%;
+        margin: 25px;
+    }
+}
